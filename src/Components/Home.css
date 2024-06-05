@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #15151B;
+}
+.HomePage{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100%;
+}
+
+.home-header{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+    padding: 50px;
+    color: #fbd9ad;
+
+}
+
+.heading,
+.heading-name,
+.main-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.main-name{
+    color : #CB70FF;
+}
+
+.home-image{
+    width: 26%;
+    height: 80%;
+    border-radius: 100%;
+}
+.home-image img{
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+}
+
+.typing-effect{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #CB70FF;
+}
+
+.social-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.social-logos a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.65rem;
+    color : #700c86;
+    background-color:#fbd9ad;
+    padding: 10px;
+    border-radius: 100%;
+}
+.foo{
+    background-color: #fbd9ad;
+}
+
+.social-logos a:hover {
+    color: #700c86;
+    box-shadow: 0 0 10px 10px #700c86;
+}
+
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Apply the animation to the wave class */
+.wave {
+    display: inline-block;
+    transform-origin: 70% 70%; /* Adjust this based on the position of the hand */
+    animation: wave 2s infinite;
+    font-size: 3.5rem;
+    margin-left: 15px;
+}
+
+ 
