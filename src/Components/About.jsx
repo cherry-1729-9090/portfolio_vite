@@ -6,8 +6,9 @@ import PersonalSkills from './aboutComponents/PersonalSkillContainer';
 import ToolKit from './aboutComponents/ToolkitContainer';
 import RankingComponent from './aboutComponents/RankingComponent';
 import SocialMediaContainer from './aboutComponents/SocialMediaContainer';
-import VerticalTimeLineComponent from './aboutComponents/VerticalTimeLineComponent';
 import React from 'react';
+import EducationalJourney from './aboutComponents/EducationalJourney';
+import TechnicalJourney from './aboutComponents/TechnicalJourney';
 
 function About() {
     useEffect(() => {
@@ -27,9 +28,9 @@ function About() {
                 <div className='home-about-desc'>
                     <div>
                         <h1>
-                        {'About'.split('').map((char, index) => (
-                            <span key={index} className='letter'>{char}</span>
-                        ))}
+                            {'About'.split('').map((char, index) => (
+                                <span key={index} className='letter'>{char}</span>
+                            ))}
                         </h1>
                     </div>
                 </div>
@@ -57,6 +58,7 @@ function About() {
                                 </div>
                             } />
                             <Route path="" element={<Navigate to="/about" />} />
+
                             <Route path="/skills/*" element={
                                 <div className='skill-container'>
                                     <div className='skill-set-type'>
@@ -73,10 +75,23 @@ function About() {
                                     </Routes>
                                 </div>
                             } />
-                            <Route path="/journey" element={<VerticalTimeLineComponent />} />
+
+                            <Route path='/journey/*' element={
+                                <div className='journey-timeline-container'>
+                                    <div className="journey-type">
+                                        <NavLink className="journey" to="educationalJourney">Educational Journey</NavLink>
+                                        <NavLink className="journey" to="TechnicalJourney">Technical Journey</NavLink>
+                                    </div>
+                                    <Routes>
+                                        <Route path="" element={<Navigate to="EducationalJourney" />} />
+                                        <Route path="educationalJourney" element={<EducationalJourney />} />
+                                        <Route path="technicalJourney" element={<TechnicalJourney />} />
+                                    </Routes>
+                                </div>
+                            } />
                             <Route path="/ranking" element={<RankingComponent />} />
                             <Route path="/social-media" element={<SocialMediaContainer />} />
-                        </Routes>   
+                        </Routes>
 
                     </div>
                 </div>
