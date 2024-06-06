@@ -1,6 +1,6 @@
 import './About.css';
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink, Navigate  } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import TechnicalSkillContainer from './aboutComponents/TechnicalSkillContainer';
 import PersonalSkills from './aboutComponents/PersonalSkillContainer';
 import ToolKit from './aboutComponents/ToolkitContainer';
@@ -11,12 +11,12 @@ import React from 'react';
 
 function About() {
     useEffect(() => {
-        const elements = document.querySelectorAll('.skill');
+        const elements = document.querySelectorAll('.highligtedText');
         elements.forEach(element => {
             const text = element.innerText;
             element.innerHTML = text
                 .split('')
-                .map((letter, index) => <span style="animation-delay: ${index * 0.1}s">${letter}</span>)
+                .map((letter, index) => `<span style="animation-delay: ${index * 0.1}s">${letter}</span>`)
                 .join('');
         });
     }, []);
@@ -26,7 +26,11 @@ function About() {
             <div className='about-section'>
                 <div className='home-about-desc'>
                     <div>
-                        <h1>About me</h1>
+                        <h1>
+                        {'About'.split('').map((char, index) => (
+                            <span key={index} className='letter'>{char}</span>
+                        ))}
+                        </h1>
                     </div>
                 </div>
 

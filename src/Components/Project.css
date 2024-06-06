@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-self: space-between;
-    margin-bottom: 500px;
+    color: #fbd9ad;
 }
 
 .Project-heading h1 {
@@ -18,7 +18,10 @@
     align-items: center;
     justify-content: flex-start;
 }
-
+.Project-heading h1 {
+    font-size: 3.5rem;
+    padding: 20px;
+}
 .letter {
     display: inline-block;
     transform: translateX(100%);
@@ -117,6 +120,7 @@
     padding: 10px;
     transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
+    margin-right: 10px;
 }
 
 .code-icon {
@@ -144,12 +148,11 @@
     right: -100%;
     top: 0;
     margin-right: -50px;
-    font-size: medium;
+    font-size: x-small;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: 1px solid #fbd9ad;
     padding: 10px;
-   
+    background-color: #fbd9ad;
     transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
@@ -167,10 +170,12 @@
     right: 0;
     opacity: 1;
 }
-
+    
 .project-tech-text{
     background-color: #fbd9ad;
     color:#7442ad ;
-}
+    font-size: small;
+    padding-right: 30px;
+} 
 
 

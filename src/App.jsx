@@ -6,6 +6,8 @@ import Certification from './Components/Certification.jsx';
 import { useState } from 'react';
 import Project from './Components/Project.jsx';
 import React from 'react';
+import Contact from './Components/Contact.jsx';
+
 function App() {
   const [percent, setPercent] = useState(0);
   
@@ -16,6 +18,7 @@ function App() {
       <About />
       <Certification />
       <Project />
+      <Contact />
     </div>
   );
 }

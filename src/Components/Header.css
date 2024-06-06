@@ -56,7 +56,7 @@ nav{
     justify-self: space-between;
     padding: 15px;
     color: #fbd9ad;
-
+    text-decoration: none;
 }
 
 .nav-item a span{
@@ -70,6 +70,14 @@ nav{
     height: 3px;
     background:#fbd9ad;
     transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover{
+    color: #fbd9ad;
+}
+
+.nav-item-box a:hover{
+    color: #fbd9ad;
 }
 
 .nav-item a:hover::after{
