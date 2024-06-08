@@ -13,6 +13,33 @@ a{
     margin-top: 150px;
     color: #fbd9ad;
 }
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust this value to control the spacing between the items */
+    width: 80vw; /* Adjust the width as needed */
+    margin-top: 20px; /* Add margin-top for better spacing */
+  }
+ 
+  .about-container p{
+    text-align: start;
+  }
+  .about-animation{
+    margin-right: 100px;
+    animation: slideRight 2s forwards;
+  }
+  
+  @keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 .home-about-desc h1 {
     display: flex;
@@ -364,7 +391,9 @@ a{
 .timeline-card:nth-child(4){
     animation-delay: 3s;
 }
-
+.timeline-card:nth-child(5){
+    animation-delay: 4s;
+}
 .timeline-text-box{
     padding: 10px 20px;
     position: relative;
@@ -379,7 +408,8 @@ a{
     /* background-color: #cb70ff69; */
     background-color: inherit;
 }
-.timeline-text-box h2{
+.timeline-text-box h2,
+.timeline-text-box h4{  
     /* background-color: #cb70ff81; */
     background-color: inherit;
 }

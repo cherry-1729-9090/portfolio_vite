@@ -9,6 +9,8 @@ import SocialMediaContainer from './aboutComponents/SocialMediaContainer';
 import React from 'react';
 import EducationalJourney from './aboutComponents/EducationalJourney';
 import TechnicalJourney from './aboutComponents/TechnicalJourney';
+import Lottie from 'lottie-react';
+import about_animation from '../assets/about-animation.json';
 
 function About() {
     useEffect(() => {
@@ -46,18 +48,23 @@ function About() {
 
                     <div className='container'>
                         <Routes>
+                            <Route path="/about" element={<Navigate to="/about" />} />
                             <Route path="/about" element={
-                                <div className='about-cointainer'>
-                                    <p>
-                                        My name is <span className="highligtedText">DEVI CHARAN</span> and I am a <span className="highligtedText">Computer Science and Engineering</span> student at <span className="highligtedText">SCALER SCHOOL OF TECHNOLOGY, Banglore</span>.<br></br>
-                                        I am proficient in various programming languages such as <span className="highligtedText">C, Java, Python, HTML, CSS, and JavaScript.</span><br></br>
-                                        I also have experience working with frameworks and libraries such as <span className="highligtedText">ReactJS, OpenCV, Pandas, and NumPy.</span><br></br>
-                                        Whenever possible, I also apply my passion for developing products with <span className="highligtedText">Modern Javascript Library and Frameworks.</span> <br></br>
-                                        In my free time, I enjoy learning new technologies and <span className="highligtedText">building new web technologies and products.</span><br></br>
-                                    </p>
+                                <div className='about-container'>
+                                    <div className='about-animation'>
+                                        <Lottie animationData={about_animation} height={800} width={800} />
+                                    </div>
+                                    <div>
+                                        <p>
+                                            My name is <span className="highligtedText">DEVI CHARAN</span> and I am a <span className="highligtedText">Computer Science and Engineering</span> student at <span className="highligtedText">SCALER SCHOOL OF TECHNOLOGY, Banglore</span>.<br /><br />
+                                            I am proficient in various programming languages such as <span className="highligtedText">C, Java, Python, HTML, CSS, and JavaScript.</span><br /><br />
+                                            I also have experience working with frameworks and libraries such as <span className="highligtedText">ReactJS, OpenCV, Pandas, and NumPy.</span><br /><br />
+                                            Whenever possible, I also apply my passion for developing products with <span className="highligtedText">Modern Javascript Library and Frameworks.</span><br /><br />
+                                            In my free time, I enjoy learning new technologies and <span className="highligtedText">building new web technologies and products.</span>
+                                        </p>
+                                    </div>
                                 </div>
                             } />
-                            <Route path="" element={<Navigate to="/about" />} />
 
                             <Route path="/skills/*" element={
                                 <div className='skill-container'>
@@ -83,7 +90,7 @@ function About() {
                                         <NavLink className="journey" to="TechnicalJourney">Technical Journey</NavLink>
                                     </div>
                                     <Routes>
-                                        <Route path="" element={<Navigate to="EducationalJourney" />} />
+                                        <Route path="" element={<Navigate to="educationalJourney" />} />
                                         <Route path="educationalJourney" element={<EducationalJourney />} />
                                         <Route path="technicalJourney" element={<TechnicalJourney />} />
                                     </Routes>
@@ -92,7 +99,6 @@ function About() {
                             <Route path="/ranking" element={<RankingComponent />} />
                             <Route path="/social-media" element={<SocialMediaContainer />} />
                         </Routes>
-
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import React from 'react';
 
 function Certification(){
     return(
-        <div className='certification'>
+        <div className='certification' id='certificates'>
             <div className='home-about-desc'>
                 <div>
                     <h1>

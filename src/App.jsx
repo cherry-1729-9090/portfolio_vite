@@ -1,24 +1,23 @@
 import './App.css';
 import Header from './Components/Header.jsx';
-import Home from './Components/Home.jsx';
-import About from './Components/About.jsx';
-import Certification from './Components/Certification.jsx';
 import { useState } from 'react';
-import Project from './Components/Project.jsx';
 import React from 'react';
-import Contact from './Components/Contact.jsx';
+import ProjectSeper from './Components/ProjectsSeper.jsx';
+import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
+import Main from './Components/Main.jsx';
+import Blogs from './Components/Blogs.jsx';
+import Resume from './Components/Resume.jsx';
+
 
 function App() {
   const [percent, setPercent] = useState(0);
   
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Certification />
-      <Project />
-      <Contact />
+      <Header /> 
+      <Main />
+      <Blogs />
+      <Resume />
     </div>
   );
 }

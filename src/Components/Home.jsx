@@ -4,6 +4,8 @@ import { faGithub, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import './Home.css';
 import MyPic from '../assets/MyPic.jpg';
+import Lottie from 'lottie-react';
+import nightsky from '../assets/night-sky.json';
 
 function Home() {
     const text = ["Web Developer", "Learner", "Designer", "Backend Developer"];
@@ -68,7 +70,12 @@ function Home() {
 
     return (
         <div className="HomePage">
+            
             <section className="home-header">
+            {/* <Lottie className="bg" animationData={nightsky} loop={true} />  
+            <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
+            <Lottie className="bgtemp" animationData={nightsky} loop={true} />  */}
+
                 <h1 className="heading">
                     Hi There!
                     <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>

@@ -1,16 +1,17 @@
 function EducationalJourney() {
     return (
+
+
         <div>
-            <div className="education-timeline-container">
+            <div className="technical-timeline-container">
                 <div className="timeline-card left-card">
                     <div className="timeline-text-box">
                         <i className="fas fa-graduation-cap grad-cap-icon" ></i>
                         <h2>SECONDARY SCHOOL CERTIFICATE EDUCATION</h2>
+                        <h4>2020 - 2021</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Achieved 9.8 CGPA at Vidya Vikas English Medium High School,
+                            demonstrating consistent excellence in secondary education.
                         </p>
                         <span className="left-card-arrow"></span>
                     </div>
@@ -19,12 +20,11 @@ function EducationalJourney() {
                 <div className="timeline-card right-card">
                     <div className="timeline-text-box">
                         <i className="fas fa-graduation-cap grad-cap-icon"></i>
-                        <h2>SECONDARY SCHOOL CERTIFICATE EDUCATION</h2>
+                        <h2>INTERMEDIATE</h2>
+                        <h4>2021-2023</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Attained 96% in Andhra Pradesh State Board Intermediate examinations,
+                            reflecting strong academic performance and dedication to excellence.
                         </p>
                         <span className="right-card-arrow"></span>
                     </div>
@@ -33,12 +33,12 @@ function EducationalJourney() {
                 <div className="timeline-card left-card">
                     <div className="timeline-text-box">
                         <i className="fas fa-graduation-cap grad-cap-icon"></i>
-                        <h2>SECONDARY SCHOOL CERTIFICATE EDUCATION</h2>
+                        <h2>UNDER GRADUATION</h2>
+                        <h4>2023-2027</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Currently enrolled in an undergraduate program at
+                            Scaler School of Technology, advancing skills and knowledge in technology
+                            and computer science.
                         </p>
                         <span className="left-card-arrow"></span>
                     </div>

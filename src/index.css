@@ -66,3 +66,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Background
+.bg{
+  position:fixed;
+  z-index: 0;
+  bottom: 0px;  
+  opacity: 0.2;
+  width:100%;
+}
+
+.bgtwo{
+  position:fixed;
+  z-index: 0;
+  top: 220px;
+  opacity: 0.2;
+  width:100%;
+}
+
+.bgtemp{
+  position:fixed;
+  z-index: 0;
+  top: -30px;
+  opacity: 0.2;
+  width:100%;
+} */
