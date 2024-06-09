@@ -67,7 +67,7 @@ a{
     height: 2px;
     background-color: #fbd9ad;
     position: absolute;
-    bottom: -1px; /* Adjust this value to control the space between the links and the line */
+    bottom: 0.9px; /* Adjust this value to control the space between the links and the line */
 }
 
 .about-item {
@@ -82,20 +82,14 @@ a{
     border-top-right-radius: 10px;
     border: 1px solid transparent; /* Set a transparent border initially */
     color: #fbd9ad;
+    background-color: inherit;
 
-}
-
-.about-item a{
-    text-decoration: none;
 }
 
 .about-item:hover {
-    border-color: #fbd9ad; /* Change the border color on hover */
+    border: 1px solid #fbd9ad; /* Change the border color on hover */
 }
 
-.about-item a:hover {
-    color: #fbd9ad;
-}
 .active {
     background-color: #fbd9ad;
     color: #CB70FF;
@@ -104,8 +98,6 @@ a{
 .highligtedText{
     color: #CB70FF;
 }
-
-
 .skill-set-type{
     display: flex;
     align-items: center;

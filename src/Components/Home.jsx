@@ -4,8 +4,7 @@ import { faGithub, faLinkedin, faInstagram, faTwitter } from "@fortawesome/free-
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import './Home.css';
 import MyPic from '../assets/MyPic.jpg';
-import Lottie from 'lottie-react';
-import nightsky from '../assets/night-sky.json';
+
 
 function Home() {
     const text = ["Web Developer", "Learner", "Designer", "Backend Developer"];
@@ -47,7 +46,7 @@ function Home() {
             const { left, top, width, height } = image.getBoundingClientRect();
             const x = clientX - (left + width / 2);
             const y = clientY - (top + height / 2);
-            const maxTilt = 15; 
+            const maxTilt = 15;
 
             const tiltX = (y / height) * maxTilt;
             const tiltY = -(x / width) * maxTilt;
@@ -70,9 +69,9 @@ function Home() {
 
     return (
         <div className="HomePage">
-            
+
             <section className="home-header">
-            {/* <Lottie className="bg" animationData={nightsky} loop={true} />  
+                {/* <Lottie className="bg" animationData={nightsky} loop={true} />  
             <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
             <Lottie className="bgtemp" animationData={nightsky} loop={true} />  */}
 
@@ -106,6 +105,7 @@ function Home() {
             <section className="home-image">
                 <img src={MyPic} alt="devi charan" />
             </section>
+
         </div>
     );
 }
