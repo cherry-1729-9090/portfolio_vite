@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './Components/Header.jsx';
 import React, { useEffect } from 'react';
 import ProjectSeper from './Components/ProjectsSeper.jsx';
 import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
@@ -10,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faProjectDiagram, faFileAlt, faCertificate, faBlog, faStar, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import './Components/Header.css';
 import MyPic from './assets/MyPic.jpg'; // Make sure the path to your image is correct
+
+
 
 function App() {
   const scrollToSection = (sectionId) => {
